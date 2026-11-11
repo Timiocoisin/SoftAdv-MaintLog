@@ -1,0 +1,10 @@
+{
+  "within_stage_pass_mean_abs_delta_ghat": 2.343832291005292,
+  "within_stage_pass_mean_std_ghat": 2.007931964195293,
+  "within_stage_pass_mean_range_ghat": 4.930872981481482,
+  "core_mae_raw_seedavg_passmean": 6.736429086049384,
+  "core_mae_ema05_along_stage_order": 6.923074185593216,
+  "delta_mae_ema_minus_raw": 0.18664509954383224,
+  "n_core_stages": 45,
+  "n_core_passes": 234
+}

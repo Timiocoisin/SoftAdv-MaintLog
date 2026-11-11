@@ -1,0 +1,19 @@
+{
+  "name": "Ordered-Progress Leak Index (OPLI)",
+  "definition": {
+    "s": "mean cosine of stage appearance prototypes (grayscale 32x32; no progress model)",
+    "pi": "pi(delta)=(s(delta)-s_far)/(s(1)-s_far) residual proximity",
+    "gamma": "gamma(delta)=1-pi(delta) appearance-gap severity",
+    "iota": "iota(k)=MAE_k/MAE_random (ResNet-18 CE only)",
+    "delta": "mean over core-test of min distance to train",
+    "note": "Empirical coupling across sequences; not a closed-form bound"
+  },
+  "spearman_gamma_iota": 0.5167639650217453,
+  "spearman_primary_only": 0.642857142857143,
+  "linear_fit_iota_on_gamma": {
+    "a": 1.0888490379734643,
+    "b": 1.6706618984623383
+  },
+  "n_points_nonstarved": 25,
+  "n_sequences": 7
+}

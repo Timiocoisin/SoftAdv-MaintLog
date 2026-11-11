@@ -1,0 +1,9 @@
+{
+  "name": "bright_metal_isotonic_heuristic",
+  "description": "Non-learning appearance heuristics on bright_40; Leak-Guard-10 train\u2192core. Not a multi-rater human study.",
+  "mae_core": 32.790062852957206,
+  "rho_bin10_mae_core": 34.39594460006224,
+  "piecewise_linear_mae_core": 32.80652369622771,
+  "audit_mae_core_stage": 6.909298080617284,
+  "ce_mae_core_stage": 10.475488774604058
+}

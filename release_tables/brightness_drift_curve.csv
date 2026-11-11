@@ -1,0 +1,9 @@
+method,mae_stage_macro_core45,severity,corruption
+aord_erm,16.629097128570397,0.7,brightness
+aord_erm,9.582894027346656,0.85,brightness
+aord_erm,6.908333123625901,1.0,brightness
+aord_erm,8.247203139855118,1.15,brightness
+baseline_ce,26.3219129754122,0.7,brightness
+baseline_ce,11.957336488552192,0.85,brightness
+baseline_ce,10.474565189200105,1.0,brightness
+baseline_ce,18.19650822235794,1.15,brightness

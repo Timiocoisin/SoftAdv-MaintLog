@@ -1,0 +1,16 @@
+center,seed,mae,model,protocol
+115,0,5.682151850947627,ResNet-18 (fair CNN),leave-band guard10
+115,1,4.243175873933016,ResNet-18 (fair CNN),leave-band guard10
+115,2,5.272053019205729,ResNet-18 (fair CNN),leave-band guard10
+145,0,18.279339938693575,ResNet-18 (fair CNN),leave-band guard10
+145,1,24.792881605360247,ResNet-18 (fair CNN),leave-band guard10
+145,2,17.90769585503472,ResNet-18 (fair CNN),leave-band guard10
+25,0,5.4280370520536225,ResNet-18 (fair CNN),leave-band guard10
+25,1,8.570888204423207,ResNet-18 (fair CNN),leave-band guard10
+25,2,5.006009318841198,ResNet-18 (fair CNN),leave-band guard10
+55,0,5.859755989357277,ResNet-18 (fair CNN),leave-band guard10
+55,1,5.0035295557092745,ResNet-18 (fair CNN),leave-band guard10
+55,2,3.002524453622323,ResNet-18 (fair CNN),leave-band guard10
+85,0,6.610958466706453,ResNet-18 (fair CNN),leave-band guard10
+85,1,8.3667317143193,ResNet-18 (fair CNN),leave-band guard10
+85,2,6.917315560800057,ResNet-18 (fair CNN),leave-band guard10

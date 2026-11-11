@@ -1,0 +1,23 @@
+family,severity,stem,mae,ref
+blur_sigma,0.5,Audit-OrdNet ERM,8.755781067136734,
+blur_sigma,1.0,Audit-OrdNet ERM,29.41773067938588,
+blur_sigma,1.5,Audit-OrdNet ERM,37.92720257067807,
+blur_sigma,,Audit-OrdNet ERM,6.908333123625901,clean
+blur_sigma,0.5,ResNet-18 CE,8.578847251569155,
+blur_sigma,1.0,ResNet-18 CE,24.97529242016021,
+blur_sigma,1.5,ResNet-18 CE,33.221181498532566,
+blur_sigma,,ResNet-18 CE,10.474565189200105,clean
+jpeg_quality,30.0,Audit-OrdNet ERM,30.74661370655848,
+jpeg_quality,50.0,Audit-OrdNet ERM,22.68010790305163,
+jpeg_quality,80.0,Audit-OrdNet ERM,11.73354652606621,
+jpeg_quality,,Audit-OrdNet ERM,6.908333123625901,clean
+jpeg_quality,30.0,ResNet-18 CE,27.12514276736628,
+jpeg_quality,50.0,ResNet-18 CE,12.439404292838285,
+jpeg_quality,80.0,ResNet-18 CE,19.553903115590412,
+jpeg_quality,,ResNet-18 CE,10.474565189200105,clean
+center_crop_frac,0.8,Audit-OrdNet ERM,12.32028897744638,
+center_crop_frac,0.9,Audit-OrdNet ERM,10.8281051809321,
+center_crop_frac,,Audit-OrdNet ERM,6.908333123625901,clean
+center_crop_frac,0.8,ResNet-18 CE,8.776491395052151,
+center_crop_frac,0.9,ResNet-18 CE,9.681045974347956,
+center_crop_frac,,ResNet-18 CE,10.474565189200105,clean

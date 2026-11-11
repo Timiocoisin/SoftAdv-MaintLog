@@ -1,0 +1,8 @@
+{
+  "description": "Non-learning appearance heuristics on bright_40; Leak-Guard-10 train\u2192core. Not a multi-rater human study.",
+  "isotonic_mae_core": 32.790062852957206,
+  "rho_bin10_mae_core": 34.39594460006224,
+  "piecewise_linear_mae_core": 32.80652369622771,
+  "audit_erm_seedavg_mae_core": 6.909298080617284,
+  "ce_seedavg_mae_core": 10.475488774604058
+}

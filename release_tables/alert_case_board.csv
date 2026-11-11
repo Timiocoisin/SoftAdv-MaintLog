@@ -1,0 +1,6 @@
+case,stage,pass_id,ghat,abs_err,thr,plant_action,frame
+ALERT_large,144,1,120.441838,23.558161999999996,5.0,Pause handover; re-check log vs frame/gate.,/mnt/proj/WaterWallSensing/datasets/144/Image_20251116220956431.bmp
+ALERT_large,146,2,122.78906333333333,23.21093666666667,5.0,Pause handover; re-check log vs frame/gate.,/mnt/proj/WaterWallSensing/datasets/146/Image_20251116221402635.bmp
+ALERT_moderate,23,1,15.944607500000002,7.055392499999998,5.0,Short visual re-check; raise thr if chronic.,/mnt/proj/WaterWallSensing/datasets/23/Image_20251106192605338.bmp
+OK_borderline,114,3,118.60807133333333,4.608071333333328,5.0,Accept; monitor next pass.,/mnt/proj/WaterWallSensing/datasets/114/Image_20251116163201294.bmp
+OK_clear,53,3,53.032553,0.032553000000000054,5.0,No action; gate supports log.,/mnt/proj/WaterWallSensing/datasets/53/Image_20251115170212914.bmp

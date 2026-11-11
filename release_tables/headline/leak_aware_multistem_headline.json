@@ -1,0 +1,174 @@
+{
+  "primary_estimand": "Leak-Guard-10 stage-macro MAE seedavg-pred",
+  "fold": "multi_gap_guard10",
+  "matched_max_epochs": 16,
+  "protocol_note": "All leaktrain_v2 cells share MAX_EPOCHS=16 with inner-val early-stop then refit for selected_epochs; iso_gapdrop vs erm comparisons are matched-budget.",
+  "stems_trained_or_assembled": [
+    "baseline_ce",
+    "appearance_ce",
+    "ordprog_full",
+    "audit_ord_coral"
+  ],
+  "stems_skipped": [],
+  "pairwise": [
+    {
+      "stem": "baseline_ce",
+      "erm_mae": 10.475488848172839,
+      "iso_gapdrop_mae": 7.131260399964725,
+      "delta_iso_minus_erm": -3.3442284482081144,
+      "beats_erm": true,
+      "matched_max_epochs": 16
+    },
+    {
+      "stem": "appearance_ce",
+      "erm_mae": 7.83659092144621,
+      "iso_gapdrop_mae": 8.469226055220458,
+      "delta_iso_minus_erm": 0.6326351337742482,
+      "beats_erm": false,
+      "matched_max_epochs": 16
+    },
+    {
+      "stem": "ordprog_full",
+      "erm_mae": 8.185068012804233,
+      "iso_gapdrop_mae": 6.95387281174603,
+      "delta_iso_minus_erm": -1.2311952010582035,
+      "beats_erm": true,
+      "matched_max_epochs": 16
+    },
+    {
+      "stem": "audit_ord_coral",
+      "erm_mae": 6.909298080617284,
+      "iso_gapdrop_mae": 9.853208443756612,
+      "delta_iso_minus_erm": 2.943910363139328,
+      "beats_erm": false,
+      "matched_max_epochs": 16
+    }
+  ],
+  "provenance": [
+    {
+      "stem": "baseline_ce",
+      "method": "erm",
+      "status": "ok",
+      "mae_seedavg_pred": 10.475488848172839,
+      "epochs": [
+        12,
+        15,
+        7
+      ],
+      "source": "leaktrain_v2__multi_gap_guard10__baseline_ce__erm__seed0;leaktrain_v2__multi_gap_guard10__baseline_ce__erm__seed1;leaktrain_v2__multi_gap_guard10__baseline_ce__erm__seed2"
+    },
+    {
+      "stem": "baseline_ce",
+      "method": "iso_gapdrop",
+      "status": "ok",
+      "mae_seedavg_pred": 7.131260399964725,
+      "epochs": [
+        15,
+        12,
+        13
+      ],
+      "source": "leaktrain_v2__multi_gap_guard10__baseline_ce__iso_gapdrop__seed0;leaktrain_v2__multi_gap_guard10__baseline_ce__iso_gapdrop__seed1;leaktrain_v2__multi_gap_guard10__baseline_ce__iso_gapdrop__seed2"
+    },
+    {
+      "stem": "appearance_ce",
+      "method": "erm",
+      "status": "ok",
+      "mae_seedavg_pred": 7.83659092144621,
+      "epochs": [
+        12,
+        16,
+        11
+      ],
+      "source": "leaktrain_v2__multi_gap_guard10__appearance_ce__erm__seed0;leaktrain_v2__multi_gap_guard10__appearance_ce__erm__seed1;leaktrain_v2__multi_gap_guard10__appearance_ce__erm__seed2"
+    },
+    {
+      "stem": "appearance_ce",
+      "method": "iso_gapdrop",
+      "status": "ok",
+      "mae_seedavg_pred": 8.469226055220458,
+      "epochs": [
+        16,
+        13,
+        14
+      ],
+      "source": "leaktrain_v2__multi_gap_guard10__appearance_ce__iso_gapdrop__seed0;leaktrain_v2__multi_gap_guard10__appearance_ce__iso_gapdrop__seed1;leaktrain_v2__multi_gap_guard10__appearance_ce__iso_gapdrop__seed2"
+    },
+    {
+      "stem": "ordprog_full",
+      "method": "erm",
+      "status": "ok",
+      "mae_seedavg_pred": 8.185068012804233,
+      "epochs": [
+        13,
+        11,
+        12
+      ],
+      "source": "leaktrain_v2__multi_gap_guard10__ordprog_full__erm__seed0;leaktrain_v2__multi_gap_guard10__ordprog_full__erm__seed1;leaktrain_v2__multi_gap_guard10__ordprog_full__erm__seed2"
+    },
+    {
+      "stem": "ordprog_full",
+      "method": "iso_gapdrop",
+      "status": "ok",
+      "mae_seedavg_pred": 6.95387281174603,
+      "epochs": [
+        13,
+        16,
+        13
+      ],
+      "source": "leaktrain_v2__multi_gap_guard10__ordprog_full__iso_gapdrop__seed0;leaktrain_v2__multi_gap_guard10__ordprog_full__iso_gapdrop__seed1;leaktrain_v2__multi_gap_guard10__ordprog_full__iso_gapdrop__seed2"
+    },
+    {
+      "stem": "audit_ord_coral",
+      "method": "erm",
+      "status": "ok",
+      "mae_seedavg_pred": 6.909298080617284,
+      "epochs": [
+        10,
+        16,
+        8
+      ],
+      "source": "leaktrain_v2__multi_gap_guard10__audit_ord_coral__erm__seed0;leaktrain_v2__multi_gap_guard10__audit_ord_coral__erm__seed1;leaktrain_v2__multi_gap_guard10__audit_ord_coral__erm__seed2"
+    },
+    {
+      "stem": "audit_ord_coral",
+      "method": "iso_gapdrop",
+      "status": "ok",
+      "mae_seedavg_pred": 9.853208443756612,
+      "epochs": [
+        6,
+        7,
+        11
+      ],
+      "source": "leaktrain_v2__multi_gap_guard10__audit_ord_coral__iso_gapdrop__seed0;leaktrain_v2__multi_gap_guard10__audit_ord_coral__iso_gapdrop__seed1;leaktrain_v2__multi_gap_guard10__audit_ord_coral__iso_gapdrop__seed2"
+    }
+  ],
+  "v1_ordprog_full": {
+    "erm": 8.185068012804233,
+    "gapdrop": 9.805175078871253,
+    "leaktrain": 23.682058499590827,
+    "gapmix": 30.28756513440741
+  },
+  "claim_safe": "Under matched MAX_EPOCHS=16, iso+late-gapdrop vs ERM: baseline_ce (10.48\u21927.13) WIN; appearance_ce (7.84\u21928.47) no-gain/hurt; ordprog_full (8.19\u21926.95) WIN; audit_ord_coral (6.91\u21929.85) no-gain/hurt. Primary manuscript CORAL-metal win stands; recipe is stem-dependent (do NOT claim universal gain). See leak_aware_2x2_* for full factor board.",
+  "L_LG": {
+    "name": "L_LG",
+    "definition": "Leak-aware training objective under matched MAX_EPOCHS: L_LG = w_iso(g) * L_task(x, g), with optional late stage-band dropout on the mini-batch support. L_task is the stem's usual OrdProg loss (CE3 + progress + CORAL/CE5).",
+    "iso_weight": "For each train stage g, d(g)=min_{g'\u2260g}|g-g'| over the train pool; normalize d to [0,1] \u2192 \u00f1(g); then w_iso(g)=1 + \u03b1\u00b7\u00f1(g) with \u03b1=1.0. Isolated stages (large min gap) are upweighted; neighbours are not deleted.",
+    "late_gapdrop": "Only when epoch > MAX_EPOCHS/2: sample centre c from train stages and width w\u2208{2,3}; drop frames with |g-c|\u2264w from the epoch's train ids (keep at least max(6, n_stages/4) stages and \u226564 frames). Mimics Leak-Guard hard gaps late in training without early underfitting.",
+    "matched_budget": {
+      "MAX_EPOCHS": 16,
+      "fold": "multi_gap_guard10",
+      "estimand": "Leak-Guard-10 stage-macro MAE on core45, seed-averaged predictions",
+      "protocol": "inner-val early-stop \u2192 refit for selected_epochs \u2264 MAX_EPOCHS"
+    },
+    "ablation_axes": {
+      "iso": [
+        "off (erm, gapdrop_late)",
+        "on (iso_weight, iso_gapdrop)"
+      ],
+      "late_gapdrop": [
+        "off (erm, iso_weight)",
+        "on (gapdrop_late, iso_gapdrop)"
+      ]
+    }
+  }
+}

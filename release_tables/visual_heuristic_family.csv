@@ -1,0 +1,6 @@
+method,mae_core
+ρ isotonic,32.790062852957206
+ρ 10-bin lookup,34.39594460006224
+ρ piecewise-linear,32.80652369622771
+Audit-OrdNet ERM,6.909298080617284
+ResNet-18 CE,10.475488774604058
