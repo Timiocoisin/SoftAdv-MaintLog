@@ -4,7 +4,7 @@
   "title": "Maintenance handover decision record",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "record_id", "asset", "campaign", "stage",
+  "required": ["schema_version", "record_id", "asset", "campaign", "stage", "pass",
                "log", "evidence", "decision", "rationale", "provenance"],
   "properties": {
     "schema_version": { "const": "1.0" },
@@ -21,14 +21,25 @@
     "campaign": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["campaign_id", "window_start", "window_end"],
+      "required": ["campaign_id", "window_start", "window_end", "planned_stages"],
       "properties": {
         "campaign_id": { "type": "string" },
+        "window_start": { "type": "string", "format": "date-time" },
+        "window_end": { "type": "string", "format": "date-time" },
+          "planned_stages": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "stage": { "type": "integer", "minimum": 0 },
+    "pass": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["index", "window_start", "window_end"],
+      "properties": {
+        "index": { "type": "integer", "minimum": 0 },
         "window_start": { "type": "string", "format": "date-time" },
         "window_end": { "type": "string", "format": "date-time" }
       }
     },
-    "stage": { "type": "integer", "minimum": 0 },
     "log": {
       "type": "object",
       "additionalProperties": false,

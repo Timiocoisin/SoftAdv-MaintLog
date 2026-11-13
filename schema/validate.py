@@ -68,14 +68,32 @@ def check_constraints(rec, previous_stage=None):
         if rec["stage"] < previous_stage:
             errors.append("C1 violated: accepted stage moves backwards")
 
-    # C2 evidence captured inside the pass window
+    # C2 evidence captured inside the pass window (two-sided when the window is present)
+    win = rec.get("pass") or {}
     for item in ev:
-        if _ts(item["captured_at"]) < _ts(log["written_at"]):
+        cap = _ts(item["captured_at"])
+        if "window_start" in win and cap < _ts(win["window_start"]):
+            errors.append("C2 violated: evidence falls before the pass window")
+        if "window_end" in win and cap > _ts(win["window_end"]):
+            errors.append("C2 violated: evidence falls after the pass window")
+        if "window_start" not in win and cap < _ts(log["written_at"]):
             errors.append("C2 violated: evidence predates the log entry")
 
-    # C3 gate availability must be recorded, not inferred
+    # C3 gate availability must be recorded, not inferred, and it governs the decision
     if not all("gate" in item for item in ev):
         errors.append("C3 violated: gate quality not recorded")
+    if rec["decision"] == "PASS":
+        if any(item.get("gate") != "usable" for item in ev):
+            errors.append("C3 violated: PASS on evidence whose gate is not usable")
+        if any(not float(item.get("confidence", 0)) > 0.0 for item in ev):
+            errors.append("C3 violated: PASS on evidence with no reported support")
+    planned = rec.get("campaign", {}).get("planned_stages")
+    if isinstance(planned, int) and planned > 0:
+        for item in ev:
+            est = item.get("estimate")
+            if isinstance(est, (int, float)) and not 0 <= float(est) <= planned:
+                errors.append(
+                    f"C3 violated: estimate {est} outside the campaign's {planned} stages")
 
     # C4 only the supervisor may override
     over = rec.get("override")

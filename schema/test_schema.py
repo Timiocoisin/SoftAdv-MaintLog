@@ -16,18 +16,20 @@ GOOD = {
     "asset": {"asset_id": "WW-A-01", "component_type": "water-wall panel"},
     "campaign": {"campaign_id": "CAMP-2025-11",
                  "window_start": "2025-11-03T08:00:00+08:00",
-                 "window_end": "2025-11-16T18:00:00+08:00"},
+                 "window_end": "2025-11-16T18:00:00+08:00", "planned_stages": 169},
     "stage": 85,
+    "pass": {"index": 2, "window_start": "2025-11-09T10:11:00+08:00",
+             "window_end": "2025-11-09T10:18:00+08:00"},
     "log": {"value": 85, "writer_id": "W-07",
             "written_at": "2025-11-09T10:12:00+08:00", "sheet_id": "S-085"},
     "evidence": [{"evidence_id": "E-0851",
                   "frame_uri": "file:///frames/pass0085/f012.jpg",
-                  "estimate": 92.0, "gate": "usable", "confidence": 0.81,
+                  "estimate": 97.0, "gate": "usable", "confidence": 0.81,
                   "captured_at": "2025-11-09T10:14:00+08:00"}],
     "decision": "REVIEW",
     "threshold": 10,
     "rationale": {"rule_id": "R2", "evidence_refs": ["E-0851"],
-                  "margin": -3.0, "expected_cost": 2.0},
+                  "margin": 2.0, "expected_cost": 2.0},
     "override": {"response": "change", "operator_id": "SUP-02",
                  "decided_at": "2025-11-09T10:41:00+08:00",
                  "reason": "sheet re-read against panel"},
@@ -58,7 +60,7 @@ bad["override"] = None
 cases.append(("accepted stage moves back (C1)", bad, 85))
 
 bad = copy.deepcopy(GOOD)
-bad["log"]["written_at"] = "2025-11-09T10:20:00+08:00"
+bad["evidence"][0]["captured_at"] = "2025-11-09T09:55:00+08:00"
 cases.append(("evidence before log (C2)", bad, None))
 
 for name, rec, prev in cases:
