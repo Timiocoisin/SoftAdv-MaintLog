@@ -1,0 +1,5 @@
+dataset,SoftAdv_applicable,reading
+NEU surface defects,False,Wrong estimand: SoftAdv FA/Det must not be reported as success
+MVTec AD,False,Wrong estimand: anomaly maps ≠ log--camera stage consistency
+Mudestreda ordered wear,True,Contract-transfer check only; not a second SoftAdv application claim
+Water-wall laboratory case,True,Primary SoftAdv evidence specimen

@@ -1,0 +1,11 @@
+setting,trial,thr,n,mae,FA,Det_small,Det_large,Det_half,reading
+I feasibility (random80 SoftAdv),Disassembly A / front,1,47,1.0799753592907804,0.44680851063829785,0.8297872340425532,0.9787234042553191,1.0,"Protocol readable; moderate FA, high Det"
+III stress (hard-gap guard3),Disassembly A / front,1,24,3.8268857919444446,1.0,1.0,1.0,1.0,High FA when stage-gap premise is hard; caution/guardrail
+I feasibility (random80 SoftAdv),Disassembly A / left,1,47,1.032125751524823,0.3404255319148936,0.5957446808510638,0.9361702127659575,0.9361702127659575,"Protocol readable; moderate FA, high Det"
+III stress (hard-gap guard3),Disassembly A / left,1,24,3.133322679722222,1.0,1.0,1.0,1.0,High FA when stage-gap premise is hard; caution/guardrail
+I feasibility (random80 SoftAdv),Reassembly A / front,1,47,1.777138434964539,0.6170212765957447,0.7659574468085106,0.9361702127659575,1.0,"Protocol readable; moderate FA, high Det"
+III stress (hard-gap guard3),Reassembly A / front,1,24,3.914114660359722,1.0,1.0,1.0,1.0,High FA when stage-gap premise is hard; caution/guardrail
+I feasibility (random80 SoftAdv),Disassembly ER07 / front,1,47,1.9192040102836883,0.5957446808510638,0.723404255319149,1.0,1.0,"Protocol readable; moderate FA, high Det"
+III stress (hard-gap guard3),Disassembly ER07 / front,1,24,2.3469952708333333,0.7916666666666666,1.0,1.0,1.0,High FA when stage-gap premise is hard; caution/guardrail
+III invalid-transfer (late + early-shifted g_log),Disassembly A / front,1,32,4.326091417500001,0.8125,,,,ALERT rises under deliberate wrong-transfer premise
+"II leave-view (left, random80 SoftAdv)",Disassembly A / left,1,47,1.032125751524823,0.3404255319148936,0.5957446808510638,0.9361702127659575,0.9361702127659575,Same SoftAdv contract on alternate view

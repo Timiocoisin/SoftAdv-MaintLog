@@ -1,0 +1,8 @@
+{
+  "n_carriers": 9,
+  "n_contract_ok": 7,
+  "n_usable_and_contract": 6,
+  "FA_range": "0.226--0.662",
+  "Det_large_range": "0.795--1.000",
+  "reading": "FA varies by carrier under fixed SoftAdv REVIEW; large/half Det stays high for usable carriers --- SoftAdv is hostable."
+}

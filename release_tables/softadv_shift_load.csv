@@ -1,0 +1,5 @@
+setting,n_recheck,note
+No SoftAdv advisory,0,No exception signal
+SoftAdv thr=10 (primary),62,FA-driven re-check budget
+SoftAdv thr=5 (conservative),110,"Higher FA, higher small-Det"
+SoftAdv thr*=8 (risk-min),72,Argmin expected minutes under illustrative scenario weights

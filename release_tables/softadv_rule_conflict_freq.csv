@@ -1,0 +1,6 @@
+condition,n,concurrent_R2R3_candidates,R3_InspectGate,R2_RecheckLog_after_priority,priority
+correct,234,2,24,60,R5>R3>R2>R4>R1
+large,234,24,24,207,R5>R3>R2>R4>R1
+small,234,12,24,75,R5>R3>R2>R4>R1
+half,234,24,24,210,R5>R3>R2>R4>R1
+mirror,234,24,24,186,R5>R3>R2>R4>R1

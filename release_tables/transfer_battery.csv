@@ -1,0 +1,8 @@
+layer,stress,audit_mae,ce_mae,softadv_alert_thr10,note
+II,pose_crop_proxy_0.9,10.83,9.68,,camera-install/pose proxy; MAE only
+II,panorama_A_to_B,3.12,7.38,0.023,within-wall view shift; seedavg ALERT
+II,panorama_B_to_A,2.33,2.71,0.000,within-wall view shift; seedavg ALERT
+II,brightness_mean,9.98,18.83,,exception trigger; MAE board
+II,leave_band_c115_g10,7.51±2.00,9.30±5.34,0.250,held-out mid band; seedavg ALERT
+III,campaign_early_to_late,≈45.5,≈43.6,0.935,falsifier; seedavg ALERT
+III,campaign_late_to_early,≈43.3,≈38.5,0.954,falsifier; seedavg ALERT

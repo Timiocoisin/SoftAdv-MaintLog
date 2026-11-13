@@ -1,0 +1,5 @@
+carrier,setting,SoftAdv_ALERT_mean,n_seeds
+Audit-OrdNet,campaign_early_to_late,0.9378277153558052,3
+Audit-OrdNet,campaign_late_to_early,0.9544753086419754,3
+ResNet-18 CE--RGB,campaign_early_to_late,0.9273408239700375,3
+ResNet-18 CE--RGB,campaign_late_to_early,0.9290123456790124,3

@@ -1,0 +1,41 @@
+method,thr,condition,metric,rate,n_recheck,n
+SoftAdv (Audit-OrdNet),5,correct,false_alarm,0.4700854700854701,110,234
+SoftAdv (Audit-OrdNet),5,small_+3_to_+8,detection,0.6452991452991453,151,234
+SoftAdv (Audit-OrdNet),5,large_+15_to_+40,detection,1.0,234,234
+SoftAdv (Audit-OrdNet),5,half_campaign_+84,detection,1.0,234,234
+SoftAdv (Audit-OrdNet),5,early_late_mirror,detection,0.9401709401709402,220,234
+Bright-ratio SoftAdv,5,correct,false_alarm,0.7948717948717948,186,234
+Bright-ratio SoftAdv,5,small_+3_to_+8,detection,0.7393162393162394,173,234
+Bright-ratio SoftAdv,5,large_+15_to_+40,detection,0.9145299145299145,214,234
+Bright-ratio SoftAdv,5,half_campaign_+84,detection,1.0,234,234
+Bright-ratio SoftAdv,5,early_late_mirror,detection,0.9786324786324786,229,234
+CE-RGB SoftAdv,5,correct,false_alarm,0.7264957264957265,170,234
+CE-RGB SoftAdv,5,small_+3_to_+8,detection,0.8632478632478633,202,234
+CE-RGB SoftAdv,5,large_+15_to_+40,detection,1.0,234,234
+CE-RGB SoftAdv,5,half_campaign_+84,detection,1.0,234,234
+CE-RGB SoftAdv,5,early_late_mirror,detection,0.9444444444444444,221,234
+Random recheck (matched SoftAdv FA),5,small_+3_to_+8,detection_expected,0.4700854700854701,110,234
+Random recheck (matched SoftAdv FA),5,large_+15_to_+40,detection_expected,0.4700854700854701,110,234
+Random recheck (matched SoftAdv FA),5,half_campaign_+84,detection_expected,0.4700854700854701,110,234
+Random recheck (matched SoftAdv FA),5,early_late_mirror,detection_expected,0.4700854700854701,110,234
+Random recheck (matched SoftAdv FA),5,correct,false_alarm,0.4700854700854701,110,234
+SoftAdv (Audit-OrdNet),10,correct,false_alarm,0.26495726495726496,62,234
+SoftAdv (Audit-OrdNet),10,small_+3_to_+8,detection,0.3717948717948718,87,234
+SoftAdv (Audit-OrdNet),10,large_+15_to_+40,detection,0.9871794871794872,231,234
+SoftAdv (Audit-OrdNet),10,half_campaign_+84,detection,1.0,234,234
+SoftAdv (Audit-OrdNet),10,early_late_mirror,detection,0.8974358974358975,210,234
+Bright-ratio SoftAdv,10,correct,false_alarm,0.6623931623931624,155,234
+Bright-ratio SoftAdv,10,small_+3_to_+8,detection,0.6111111111111112,143,234
+Bright-ratio SoftAdv,10,large_+15_to_+40,detection,0.7948717948717948,186,234
+Bright-ratio SoftAdv,10,half_campaign_+84,detection,0.9871794871794872,231,234
+Bright-ratio SoftAdv,10,early_late_mirror,detection,0.9786324786324786,229,234
+CE-RGB SoftAdv,10,correct,false_alarm,0.47863247863247865,112,234
+CE-RGB SoftAdv,10,small_+3_to_+8,detection,0.717948717948718,168,234
+CE-RGB SoftAdv,10,large_+15_to_+40,detection,0.9957264957264957,233,234
+CE-RGB SoftAdv,10,half_campaign_+84,detection,1.0,234,234
+CE-RGB SoftAdv,10,early_late_mirror,detection,0.8803418803418803,206,234
+Random recheck (matched SoftAdv FA),10,small_+3_to_+8,detection_expected,0.26495726495726496,62,234
+Random recheck (matched SoftAdv FA),10,large_+15_to_+40,detection_expected,0.26495726495726496,62,234
+Random recheck (matched SoftAdv FA),10,half_campaign_+84,detection_expected,0.26495726495726496,62,234
+Random recheck (matched SoftAdv FA),10,early_late_mirror,detection_expected,0.26495726495726496,62,234
+Random recheck (matched SoftAdv FA),10,correct,false_alarm,0.26495726495726496,62,234

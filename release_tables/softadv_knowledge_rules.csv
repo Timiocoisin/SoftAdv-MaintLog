@@ -1,0 +1,6 @@
+rule_id,state,condition,action
+R5,any,offline acceptance card invalid,PauseSoftAdv
+R4,after first recheck,REVIEW unresolved,Escalate
+R3,initial check,u=0,InspectGate
+R2,initial check,u=1 and abs(estimate-submitted_log)>tolerance,RecheckLog
+R1,initial check,u=1 and abs(estimate-submitted_log)<=tolerance,Accept recommendation

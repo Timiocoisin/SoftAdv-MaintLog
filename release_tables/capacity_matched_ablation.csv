@@ -1,0 +1,8 @@
+variant,mae10,role
+Bright-ratio piecewise-linear (weak),32.81,non-CNN weak learner
+Bright-ratio isotonic (weak),32.79,non-CNN weak learner
+Bright-ratio binned map (weak),34.40,non-CNN weak learner
+RGB-only (CE--RGB),10.48,matched RGB stem
+MetalField-only (appearance stream),7.84,metal stream under CE
+Audit-OrdNet full,6.91,MetalField-backed dual-stream
+no-gate / w/o MetalField,11.14,dual layout without metal gate

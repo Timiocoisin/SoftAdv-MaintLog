@@ -1,0 +1,37 @@
+{
+  "injectability": {
+    "name": "injectability",
+    "criterion": "Det_large - FA >= 0.50 at thr=10 (Audit, primary SoftAdv without forced-gate)",
+    "value": 0.7222222222222223,
+    "pass_": true
+  },
+  "budget_controllability": {
+    "name": "budget-controllability",
+    "criterion": "FA nonincreasing in thr=1..20 (Audit, primary)",
+    "value": "monotone",
+    "pass_": true
+  },
+  "fail_closedness": {
+    "name": "fail-closedness",
+    "criterion": "Layer-III SoftAdv REVIEW >= 0.90 on campaign-half (Audit and CE)",
+    "value": {
+      "Audit": 0.9461515119988904,
+      "CE": 0.9281765848245249
+    },
+    "pass_": true
+  },
+  "hostability_invariant": "Hostability invariant: under one SoftAdv decision rule d=ALERT iff |ghat-g_log|>thr (gate optional), the decision semantics (OK=acceptable handover review; ALERT=needs human re-check) are carrier-invariant; only the FA/Det operating point changes.",
+  "thr_star_risk": 8,
+  "thr_primary": 10,
+  "c_FA": 2.0,
+  "c_MISS": 45.0,
+  "expected_min_at_thr_star": 188.99999999999983,
+  "expected_min_at_thr10": 258.99999999999955,
+  "expected_min_at_thr5": 220.0,
+  "weak_gate_quantile": 0.1,
+  "weak_gate_rate": 0.10256410256410256,
+  "gate_forced_FA_delta": 0.09401709401709402,
+  "gate_forced_Det_large_delta": 0.0,
+  "cost_weight_source": "illustrative scenario inputs",
+  "loss_interpretation": "balanced challenge batches, not measured field expected cost"
+}

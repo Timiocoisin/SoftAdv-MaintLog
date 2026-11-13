@@ -1,0 +1,7 @@
+SoftAdv_setting,FA_correct,Det_large,Det_half,Reading
+I readable (random; tool RGB),0.17,0.96,0.88,Protocol readable
+II leave-tool T10 (tool RGB),0.32,1.00,0.68,Leave-tool contract holds
+III early→late (tool RGB),0.46,0.98,0.56,Elevated FA under tool-time shift
+I readable (random; spec_x),0.08,0.98,0.94,"Same contract, alternate modality"
+II leave-tool T10 (spec_x),0.34,1.00,0.66,Leave-tool holds on spectrogram
+III early→late (spec_x),0.36,0.99,0.64,Elevated FA; protocol homology

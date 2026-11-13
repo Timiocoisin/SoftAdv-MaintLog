@@ -1,0 +1,5 @@
+industrial_need,use,not_use,reason
+Is the handwritten handover stage still consistent with the scene?,SoftAdv,Defect/NEU/MVTec classifiers,"Estimand is log--camera stage consistency, not defect class"
+Locate surface defects / anomalies on a product image,Defect detection (NEU/MVTec-style),SoftAdv PASS/REVIEW,No g_log handover stage; SoftAdv decision semantics do not apply
+Estimate continuous process index / soft-sensor quality,Soft-sensor regression,SoftAdv as primary score,Continuous index ≠ handwritten campaign stage for acceptance
+Stop grinders automatically on suspected mismatch,Hard interlock (out of SoftAdv scope),SoftAdv,SoftAdv is advisory; human authority retained

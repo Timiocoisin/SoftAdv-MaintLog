@@ -1,0 +1,43 @@
+{
+  "dataset": "Mudestreda",
+  "thr": 0,
+  "ghat": "round(ResNet-18 progress)",
+  "rows": [
+    {
+      "SoftAdv_setting": "I readable (random split)",
+      "FA_correct": "0.08",
+      "Det_large": "0.98",
+      "Det_half": "0.94",
+      "Reading": "Protocol readable"
+    },
+    {
+      "SoftAdv_setting": "II leave-tool (T10 hold)",
+      "FA_correct": "0.34",
+      "Det_large": "1.00",
+      "Det_half": "0.66",
+      "Reading": "Leave-tool SoftAdv contract"
+    },
+    {
+      "SoftAdv_setting": "II hard-gap analogue (hold Used)",
+      "FA_correct": "0.65",
+      "Det_large": "0.72",
+      "Det_half": "0.63",
+      "Reading": "Hard-gap analogue (hold Used)"
+    },
+    {
+      "SoftAdv_setting": "III early\u2192late tools",
+      "FA_correct": "0.36",
+      "Det_large": "0.99",
+      "Det_half": "0.64",
+      "Reading": "Weaker than intended guardrail"
+    },
+    {
+      "SoftAdv_setting": "III late\u2192early tools",
+      "FA_correct": "0.40",
+      "Det_large": "0.93",
+      "Det_half": "0.67",
+      "Reading": "Weaker than intended guardrail"
+    }
+  ],
+  "claim_boundary": "SoftAdv protocol transfer on ordered tool wear; not 2nd water-wall; not IMPACT"
+}

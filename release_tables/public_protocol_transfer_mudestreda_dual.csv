@@ -1,0 +1,10 @@
+modality,SoftAdv_setting,FA,Det_large,Det_half
+tool RGB,I readable (random split),0.08,0.98,0.94
+tool RGB,II leave-tool (T10 hold),0.34,1.0,0.66
+tool RGB,II hard-gap analogue (hold Used),0.65,0.72,0.63
+tool RGB,III early→late tools,0.36,0.99,0.64
+tool RGB,III late→early tools,0.4,0.93,0.67
+spec_x,I readable (random split),0.08,0.98,0.94
+spec_x,II leave-tool (T10 hold),0.34,1.0,0.66
+spec_x,III early→late tools,0.36,0.99,0.64
+spec_x,III late→early tools,0.4,0.93,0.67

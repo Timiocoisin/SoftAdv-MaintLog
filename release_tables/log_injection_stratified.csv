@@ -1,0 +1,41 @@
+reader,condition,delta,metric,rate,n_recheck,n,thr,mean_mismatch
+Audit-OrdNet SoftAdv,correct (g_log=g*),0,false_alarm,0.26495726495726496,62,234,10,0.0
+Audit-OrdNet SoftAdv,offset +3,3,detection,0.2905982905982906,68,234,10,3.0
+Audit-OrdNet SoftAdv,offset +5,5,detection,0.34615384615384615,81,234,10,5.0
+Audit-OrdNet SoftAdv,offset +8,8,detection,0.4230769230769231,99,234,10,8.0
+Audit-OrdNet SoftAdv,offset +15,15,detection,0.8717948717948718,204,234,10,15.0
+Audit-OrdNet SoftAdv,offset +20,20,detection,0.9487179487179487,222,234,10,20.0
+Audit-OrdNet SoftAdv,offset +30,30,detection,1.0,234,234,10,28.846153846153847
+Audit-OrdNet SoftAdv,offset +40,40,detection,1.0,234,234,10,36.92307692307692
+Audit-OrdNet SoftAdv,small +3..+8,3-8,detection,0.3717948717948718,87,234,10,5.696581196581197
+Audit-OrdNet SoftAdv,large +15..+40,15-40,detection,0.9871794871794872,231,234,10,26.84188034188034
+Audit-OrdNet SoftAdv,half-campaign +84,half-campaign +84,detection,1.0,234,234,10,66.13247863247864
+Audit-OrdNet SoftAdv,early/late mirror,early/late mirror,detection,0.8974358974358975,210,234,10,73.04273504273505
+CE-RGB SoftAdv,correct (g_log=g*),0,false_alarm,0.47863247863247865,112,234,10,0.0
+CE-RGB SoftAdv,offset +3,3,detection,0.5982905982905983,140,234,10,3.0
+CE-RGB SoftAdv,offset +5,5,detection,0.6794871794871795,159,234,10,5.0
+CE-RGB SoftAdv,offset +8,8,detection,0.7905982905982906,185,234,10,8.0
+CE-RGB SoftAdv,offset +15,15,detection,0.9487179487179487,222,234,10,15.0
+CE-RGB SoftAdv,offset +20,20,detection,0.9786324786324786,229,234,10,20.0
+CE-RGB SoftAdv,offset +30,30,detection,1.0,234,234,10,28.846153846153847
+CE-RGB SoftAdv,offset +40,40,detection,1.0,234,234,10,36.92307692307692
+CE-RGB SoftAdv,small +3..+8,3-8,detection,0.717948717948718,168,234,10,5.696581196581197
+CE-RGB SoftAdv,large +15..+40,15-40,detection,0.9957264957264957,233,234,10,26.84188034188034
+CE-RGB SoftAdv,half-campaign +84,half-campaign +84,detection,1.0,234,234,10,66.13247863247864
+CE-RGB SoftAdv,early/late mirror,early/late mirror,detection,0.8803418803418803,206,234,10,73.04273504273505
+Bright-ratio SoftAdv,correct (g_log=g*),0,false_alarm,0.6623931623931624,155,234,10,0.0
+Bright-ratio SoftAdv,offset +3,3,detection,0.5982905982905983,140,234,10,3.0
+Bright-ratio SoftAdv,offset +5,5,detection,0.6196581196581197,145,234,10,5.0
+Bright-ratio SoftAdv,offset +8,8,detection,0.6410256410256411,150,234,10,8.0
+Bright-ratio SoftAdv,offset +15,15,detection,0.8247863247863247,193,234,10,15.0
+Bright-ratio SoftAdv,offset +20,20,detection,0.9358974358974359,219,234,10,20.0
+Bright-ratio SoftAdv,offset +30,30,detection,0.8162393162393162,191,234,10,28.846153846153847
+Bright-ratio SoftAdv,offset +40,40,detection,0.6923076923076923,162,234,10,36.92307692307692
+Bright-ratio SoftAdv,small +3..+8,3-8,detection,0.6111111111111112,143,234,10,5.696581196581197
+Bright-ratio SoftAdv,large +15..+40,15-40,detection,0.7948717948717948,186,234,10,26.84188034188034
+Bright-ratio SoftAdv,half-campaign +84,half-campaign +84,detection,0.9871794871794872,231,234,10,66.13247863247864
+Bright-ratio SoftAdv,early/late mirror,early/late mirror,detection,0.9786324786324786,229,234,10,73.04273504273505
+Random recheck @rate=0.265,small +3..+8,n/a,detection_expected,0.26495726495726496,62,234,10,
+Random recheck @rate=0.265,large +15..+40,n/a,detection_expected,0.26495726495726496,62,234,10,
+Random recheck @rate=0.265,half-campaign +84,n/a,detection_expected,0.26495726495726496,62,234,10,
+Random recheck @rate=0.265,early/late mirror,n/a,detection_expected,0.26495726495726496,62,234,10,

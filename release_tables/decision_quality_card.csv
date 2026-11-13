@@ -1,0 +1,11 @@
+metric,value,note
+n_core_passes,234,k*=10 SoftAdv board
+FA_correct_thr10,0.265,P(ALERT | g_log=g*)
+Det_small_3_8_thr10,0.372,injected delta Unif{3..8}
+Det_large_15_40_thr10,0.987,injected delta Unif{15..40}
+Det_half_plus84_thr10,1.0,half-campaign offset
+n_recheck_correct_thr10,62,ALERT count when g_log=g*
+bright_FA_thr10,0.662,brightness-only SoftAdv FA
+bright_Det_large_thr10,0.795,brightness-only SoftAdv large-error Det
+random_Det_at_SoftAdv_FA,0.265,expected detection at matched FA budget
+nested_large_gap_hit_definitional,1.0,"NOT a SoftAdv claim: |e|>15 implies ALERT at thr=10 by nesting"

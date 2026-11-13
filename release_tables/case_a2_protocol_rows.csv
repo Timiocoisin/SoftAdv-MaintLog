@@ -1,0 +1,13 @@
+case,fold,scope,guarantee,criterion,value,FA,Det_large,pass_fail,note
+A2,panorama_A_to_B,all_test_passes,injectability,Det_large-FA>=0.5 at thr=10,0.8985507246376812,0.02318840579710145,0.9217391304347826,Yes,
+A2,panorama_A_to_B,all_test_passes,budget_controllability,FA nonincreasing in thr on {1..20},-0.7333333333333333,0.02318840579710145,0.9217391304347826,Yes,
+A2,panorama_A_to_B,all_test_passes,fail_closedness,Layer III campaign-half REVIEW>=0.90 (same specimen; not re-derived on A2 view),0.935,0.02318840579710145,0.9217391304347826,Yes,uses Case A Layer III early↔late SoftAdv REVIEW ≈0.93–0.95
+A2,panorama_A_to_B,core_k10,injectability,Det_large-FA>=0.5 at thr=10,1.0,0.0,1.0,Yes,
+A2,panorama_A_to_B,core_k10,budget_controllability,FA nonincreasing in thr on {1..20},-0.7555555555555555,0.0,1.0,Yes,
+A2,panorama_A_to_B,core_k10,fail_closedness,Layer III campaign-half REVIEW>=0.90 (same specimen; not re-derived on A2 view),0.935,0.0,1.0,Yes,uses Case A Layer III early↔late SoftAdv REVIEW ≈0.93–0.95
+A2,panorama_B_to_A,all_test_passes,injectability,Det_large-FA>=0.5 at thr=10,0.9248554913294798,0.0,0.9248554913294798,Yes,
+A2,panorama_B_to_A,all_test_passes,budget_controllability,FA nonincreasing in thr on {1..20},-0.7341040462427746,0.0,0.9248554913294798,Yes,
+A2,panorama_B_to_A,all_test_passes,fail_closedness,Layer III campaign-half REVIEW>=0.90 (same specimen; not re-derived on A2 view),0.935,0.0,0.9248554913294798,Yes,uses Case A Layer III early↔late SoftAdv REVIEW ≈0.93–0.95
+A2,panorama_B_to_A,core_k10,injectability,Det_large-FA>=0.5 at thr=10,1.0,0.0,1.0,Yes,
+A2,panorama_B_to_A,core_k10,budget_controllability,FA nonincreasing in thr on {1..20},-0.7741935483870968,0.0,1.0,Yes,
+A2,panorama_B_to_A,core_k10,fail_closedness,Layer III campaign-half REVIEW>=0.90 (same specimen; not re-derived on A2 view),0.935,0.0,1.0,Yes,uses Case A Layer III early↔late SoftAdv REVIEW ≈0.93–0.95
