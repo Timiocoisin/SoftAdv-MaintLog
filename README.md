@@ -27,6 +27,31 @@ the protocol blocks deployment. We report that failure as a result.
 Not included: raw laboratory frames, feature caches, trained checkpoints, manuscript
 sources.
 
+## Running the analysis scripts
+
+Every script in `scripts/` reads the campaign data from a root directory that you set
+with one environment variable, so nothing is tied to the machine the analysis was
+originally run on:
+
+```bash
+export SOFTADV_ROOT=/path/to/WaterWallSensing     # Windows: $env:SOFTADV_ROOT="..."
+python scripts/derive_threshold.py                # no data needed
+python scripts/conventional_baseline.py           # needs outputs/idea_validation_20261106/pass_features.csv
+```
+
+The scripts expect this layout under `SOFTADV_ROOT`:
+
+| Path | Needed by |
+|---|---|
+| `outputs/idea_validation_20261106/pass_features.csv` | record checks, class boards |
+| `outputs/idea_validation_20261106/predictions.csv` | estimator comparison |
+| `outputs/softadv_protocol_20261106/*_predictions.csv` | per-seed and seed-averaged boards |
+| `datasets/<stage>/Image_<timestamp>.bmp` | capture order (only the filenames are read) |
+
+Scripts that need this data exit with a clear message if `SOFTADV_ROOT` does not point
+at it. The derivation scripts (`derive_threshold.py`, `delegation_sep.py`) run with no
+data at all.
+
 ## Quick start
 
 ```bash

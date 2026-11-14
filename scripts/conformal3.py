@@ -1,4 +1,7 @@
 """Conformal grid + prevalence-dependent optimal alpha."""
+import os
+from pathlib import Path
+ROOT_DIR = Path(os.environ.get("SOFTADV_ROOT", ".")).resolve()
 import csv
 import random
 import statistics as st
@@ -6,7 +9,6 @@ from collections import defaultdict
 
 C_FA, C_MISS = 2.0, 45.0
 REPEATS, DRAWS = 10, 20
-
 
 def load(paths):
     preds, core = defaultdict(dict), {}
@@ -23,7 +25,6 @@ def load(paths):
         out.append({"stage": g, "g": g, "ghat": gh, "abs_err": abs(gh - g), "core": core[k]})
     return [r for r in out if r["core"]]
 
-
 def stage_split(rows, seed):
     stages = sorted({r["stage"] for r in rows})
     random.Random(seed).shuffle(stages)
@@ -31,11 +32,9 @@ def stage_split(rows, seed):
     return ([r for r in rows if r["stage"] in cal],
             [r for r in rows if r["stage"] not in cal])
 
-
 def q_of(cal, alpha):
     s = sorted(r["abs_err"] for r in cal)
     return s[min(len(s) - 1, int((len(s) + 1) * (1 - alpha)))]
-
 
 def det(rows, q, lo, hi, rng):
     hit = tot = 0
@@ -45,7 +44,6 @@ def det(rows, q, lo, hi, rng):
             tot += 1
             hit += abs(r["ghat"] - (r["g"] + d)) > q
     return hit / tot
-
 
 rows = load([f"aord_erm_s{s}.csv" for s in range(3)])
 grid = []

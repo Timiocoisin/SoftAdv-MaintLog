@@ -1,4 +1,7 @@
 """R1 blocking items: (A) block-wise conformal coverage, (B) structured error injection."""
+import os
+from pathlib import Path
+ROOT_DIR = Path(os.environ.get("SOFTADV_ROOT", ".")).resolve()
 import csv
 import random
 import statistics as st
@@ -7,7 +10,6 @@ from collections import defaultdict
 ALPHA = 0.265
 REPEATS = 20
 CORE_CSV = "aord_erm_s0.csv"
-
 
 def load(nseeds=3):
     preds, core = defaultdict(dict), {}
@@ -26,7 +28,6 @@ def load(nseeds=3):
                      "ghat": sum(d.values()) / len(d)})
     return rows
 
-
 rows = load()
 stages = sorted({r["stage"] for r in rows})
 # five contiguous stage blocks (quintiles of the stage range)
@@ -41,11 +42,9 @@ for r in rows:
 
 print("block sizes:", {b: sum(1 for r in rows if r["block"] == b) for b in range(5)})
 
-
 def q_of(vals, alpha):
     v = sorted(vals)
     return v[min(len(v) - 1, int((len(v) + 1) * (1 - alpha)))]
-
 
 print("\n=== (A) leave-one-block-out conformal ===")
 covs, qs, sizes = [], [], []
@@ -72,13 +71,11 @@ def det_for(transform, q, test):
         hit += abs(r["ghat"] - claim) > q
     return hit / len(test)
 
-
 def transposed(g):
     a, b = g // 10, g % 10
     if a == 0 or a == b:
         return None
     return b * 10 + a
-
 
 patterns = {
     "off-by-one (+1)": lambda g: g + 1,

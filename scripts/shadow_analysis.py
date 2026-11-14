@@ -1,3 +1,6 @@
+import os
+from pathlib import Path
+ROOT_DIR = Path(os.environ.get("SOFTADV_ROOT", ".")).resolve()
 import csv
 from collections import Counter, defaultdict
 

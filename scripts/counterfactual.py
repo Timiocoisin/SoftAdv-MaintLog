@@ -1,4 +1,7 @@
 """Counterfactual replay: how many decisions the record can re-derive at a new alpha."""
+import os
+from pathlib import Path
+ROOT_DIR = Path(os.environ.get("SOFTADV_ROOT", ".")).resolve()
 import csv
 import statistics as st
 from collections import defaultdict
