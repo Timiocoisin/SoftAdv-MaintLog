@@ -119,8 +119,27 @@ not-checked. That is a design, not a reanalysis, and the paper should say so.
 
 ## 5. Where it goes in the manuscript
 
-- Section 3.6, after the injectability row: P1 and the attenuated bar.
-- Section 6.2, new subsection: P2 and P3, with the ROC-concavity condition stated.
-- Section 6.3.2, the action audit: the identification statement, replacing the current
-  reading of the 47.1% as a confirmation rate.
-- Section 8: one sentence that `delta` is unestimated, with the design that would.
+The theory is not an appendix to the paper. It is the spine of its second claim, so the
+three claims now read:
+
+1. the record earns its place through its constraints, and the constraint decides when
+   the check fires rather than what it finds;
+2. what a verifier recovers is set by what the reviewer can confirm, not only by what
+   the detector finds;
+3. the three-outcome grammar is enforceable.
+
+Claim 2 is where this note lands, and the cost-derived bar is its mechanism rather than
+a separate contribution.
+
+| Note | Manuscript |
+|---|---|
+| Section 1, the object | Section 3.6, immediately after the injectability row: the definition of the confirmation probability and Eq. (15) |
+| P1 | Section 3.6, same passage; the bar is unchanged and the quantity clearing it is attenuated |
+| P2 and P3 | Section 6.2, subsection "A class the reviewer cannot confirm is unrecoverable", with the concavity condition stated before the comparative static |
+| Section 3, identification | Section 3.6 closes with the identification condition, and Section 6.3.2 states what the shadow run establishes instead: an interface effect and a floor, not an estimate |
+| Section 2's mechanism | Section 6.2, Eq. (16) and the band report; the economics itself is compressed into "The cost of running the rule", where the credited detection gives a break-even of 1.35 percent between 1.00 and 2.04 |
+| Section 4's risk | Section 2.6 positions the result against verification bias in diagnostic testing |
+
+The three claims are listed in Section 1.3 with a refutation condition each. A change to
+any of the four rows above has to keep those three conditions true, which is the check
+this note exists to support.
