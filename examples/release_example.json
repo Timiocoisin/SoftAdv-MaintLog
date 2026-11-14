@@ -1,0 +1,98 @@
+{
+  "bar": {
+    "c_fa_min": 1.57,
+    "c_miss_min": 45.0,
+    "cost_source": "elicited",
+    "derived": true,
+    "fa_reference": 0.265,
+    "formula": "tau = FA * (cFA / (p * cMiss) - 1)",
+    "prevalence": 0.0125,
+    "prevalence_source": "assumed, equal to the break-even",
+    "value": 0.4746
+  },
+  "card": {
+    "campaign_classes": [
+      "large offset",
+      "half-campaign shift",
+      "mirror",
+      "digit transposition",
+      "uniform small offset",
+      "off-by-three",
+      "off-by-two",
+      "off-by-one"
+    ],
+    "classes": [
+      {
+        "class": "large offset",
+        "det": 0.987,
+        "margin": 0.722,
+        "verdict": "qualified"
+      },
+      {
+        "class": "half-campaign shift",
+        "det": 1.0,
+        "margin": 0.735,
+        "verdict": "qualified"
+      },
+      {
+        "class": "mirror",
+        "det": 0.897,
+        "margin": 0.632,
+        "verdict": "qualified"
+      },
+      {
+        "class": "digit transposition",
+        "det": 0.922,
+        "margin": 0.657,
+        "verdict": "qualified"
+      },
+      {
+        "class": "uniform small offset",
+        "det": 0.372,
+        "margin": 0.10699999999999998,
+        "verdict": "excluded"
+      },
+      {
+        "class": "off-by-three",
+        "det": 0.291,
+        "margin": 0.025999999999999968,
+        "verdict": "excluded"
+      },
+      {
+        "class": "off-by-two",
+        "det": 0.274,
+        "margin": 0.009000000000000008,
+        "verdict": "excluded"
+      },
+      {
+        "class": "off-by-one",
+        "det": 0.265,
+        "margin": 0.0,
+        "verdict": "excluded"
+      }
+    ]
+  },
+  "date": "2026-11-14",
+  "delegated": [
+    "large offset",
+    "half-campaign shift",
+    "mirror",
+    "digit transposition"
+  ],
+  "hash": "sha256:0a227a4fde74512c66b7259b7f3363ae5b9664e3332dc173133369c955f5f8aa",
+  "manual": [
+    "uniform small offset",
+    "off-by-three",
+    "off-by-two",
+    "off-by-one"
+  ],
+  "not_assessable": [],
+  "operator": "Xian-ming Huang",
+  "reason": "every declared class was measured and at least one qualifies",
+  "release": "RELEASED",
+  "site": "Changshu unit 2, exterior grinding",
+  "validation": {
+    "errors": [],
+    "valid": true
+  }
+}

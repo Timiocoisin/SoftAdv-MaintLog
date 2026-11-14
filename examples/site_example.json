@@ -1,0 +1,17 @@
+{
+  "site": "Changshu unit 2, exterior grinding",
+  "date": "2026-11-14",
+  "operator": "Xian-ming Huang",
+  "prevalence": {"value": 0.0125, "source": "assumed, equal to the break-even"},
+  "cost": {"c_fa_min": 1.57, "c_miss_min": 45.0, "source": "elicited"},
+  "classes": [
+    {"class": "large offset", "det": 0.987, "fa": 0.265, "n": 234, "source": "measured"},
+    {"class": "half-campaign shift", "det": 1.000, "fa": 0.265, "n": 234, "source": "measured"},
+    {"class": "mirror", "det": 0.897, "fa": 0.265, "n": 234, "source": "measured"},
+    {"class": "digit transposition", "det": 0.922, "fa": 0.265, "n": 234, "source": "measured"},
+    {"class": "uniform small offset", "det": 0.372, "fa": 0.265, "n": 234, "source": "measured"},
+    {"class": "off-by-three", "det": 0.291, "fa": 0.265, "n": 234, "source": "measured"},
+    {"class": "off-by-two", "det": 0.274, "fa": 0.265, "n": 234, "source": "measured"},
+    {"class": "off-by-one", "det": 0.265, "fa": 0.265, "n": 234, "source": "measured"}
+  ]
+}
