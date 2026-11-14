@@ -23,7 +23,7 @@ from sklearn.isotonic import IsotonicRegression
 from sklearn.linear_model import LinearRegression
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "outputs/iet_resubmit_20261106"
+OUT = ROOT / "outputs/softadv_protocol_20261106"
 FAIR = ROOT / "outputs/fair_cnn_validation_bf16_20261106"
 TAB = ROOT / "elsarticle/release_tables"
 FIG = ROOT / "elsarticle/figures"

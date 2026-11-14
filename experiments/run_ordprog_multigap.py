@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""P0 multi-gap runner for OrdProg-Net (IET resubmit).
+"""P0 multi-gap runner for OrdProg-Net (SoftAdv protocol).
 
 Usage:
   python run_ordprog_multigap.py prepare

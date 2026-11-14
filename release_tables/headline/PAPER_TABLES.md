@@ -4,7 +4,7 @@
 **主协议**：multi-gap（centers 25/55/85/115/145，core45）；指标为 stage-macro MAE（越小越好）  
 **不进正文**：噪声版 `ordprog_sota` / `appearance_sota`
 
-数据文件目录：`WaterWallSensing/outputs/iet_resubmit_20261106/tables/`
+数据文件目录：`WaterWallSensing/outputs/softadv_protocol_20261106/tables/`
 
 ---
 

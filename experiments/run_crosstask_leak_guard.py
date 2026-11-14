@@ -36,11 +36,11 @@ ANN = DATA / "release/crosstask_release/annotations"
 VID_DIR = DATA / "videos/40567"
 RELEASE = (
     ROOT
-    / "IET_Image_Processing_LaTeX_Template/WileyDesign/Optimal-Design-layout/release_tables"
+    / "elsarticle/release_tables"
 )
 FIG_DIR = (
     ROOT
-    / "IET_Image_Processing_LaTeX_Template/WileyDesign/Optimal-Design-layout/figures"
+    / "elsarticle/figures"
 )
 
 TASK_ID = 40567

@@ -32,7 +32,7 @@ OUT = Path(__file__).resolve().parent
 TAB = OUT / "tables"
 RELEASE = (
     ROOT
-    / "IET_Image_Processing_LaTeX_Template/WileyDesign/Optimal-Design-layout/release_tables"
+    / "elsarticle/release_tables"
 )
 sys.path.insert(0, str(ROOT))
 

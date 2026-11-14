@@ -30,7 +30,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = Path(__file__).resolve().parent
 RELEASE = (
     ROOT
-    / "IET_Image_Processing_LaTeX_Template"
+    / "elsarticle"
     / "WileyDesign"
     / "Optimal-Design-layout"
     / "release_tables"
