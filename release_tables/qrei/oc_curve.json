@@ -1,0 +1,27 @@
+{
+  "class": "mirror",
+  "lambda": 0.5,
+  "point": 0.6325,
+  "draws": 8000,
+  "seed": 20261118,
+  "pass": {
+    "sd": 0.0322,
+    "lower": 0.568,
+    "mu50": 0.563,
+    "mu80": 0.59,
+    "accept_at_observed": 0.985
+  },
+  "cluster": {
+    "sd": 0.0703,
+    "lower": 0.487,
+    "mu50": 0.638,
+    "mu80": 0.697,
+    "accept_at_observed": 0.47
+  },
+  "clusters_needed": {
+    "0.60": 86,
+    "0.62": 60,
+    "0.65": 38
+  },
+  "n_stages": 45
+}

@@ -1,0 +1,19 @@
+{
+  "class": "mirror",
+  "n_passes": 234,
+  "n_stages": 45,
+  "point": 0.6325,
+  "reps": 8000,
+  "seed": 20261118,
+  "pass_resampling": {
+    "lower": 0.568,
+    "upper": 0.692,
+    "sd": 0.032
+  },
+  "cluster_resampling": {
+    "lower": 0.487,
+    "upper": 0.762,
+    "sd": 0.07
+  },
+  "note": "the pass bound is 0.568 at every seed tried; the cluster bound lands between 0.491 and 0.498 depending on the seed, so 0.498 is one attained value and all of them sit below the 0.50 threshold"
+}
